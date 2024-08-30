@@ -46,3 +46,4 @@ It was recognized, however, that other qualitative and quantitative features cou
 
 The final set of variables was selected based on extensive financial and healthcare-related research. The financial features chosen are important for calculating specific financial ratios, which will be discussed below. Additionally, the quality of patient care provides insight into the satisfaction of those who utilize the HHA’s services. This, in turn, influences the likelihood of a person returning to that specific HHA, ultimately impacting the HHA’s financial performance.
 
+![Features for model training](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/dc079d353d44ca77df3c8a6a603842c83d47d25a/Features-for-Model-Development.png)
