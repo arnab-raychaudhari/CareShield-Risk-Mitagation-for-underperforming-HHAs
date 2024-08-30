@@ -65,3 +65,13 @@ Rather than training a limited number of models, three distinct sets of models w
 To provide a range of options for CMS, three distinct classifiers will be trained on the sample data to predict each of Pr(X) and Vni(X). Similarly, for Vi(X), three regressors will be trained, ultimately producing a minimum of nine model sets.
 
 ![Set of Machine Learning models](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/75753f21207da3ddf7e361cfb583b7d7faafd162/ML%20Model%20Set.png)
+
+Upon training and applying the models to the X_Test sample, predictions for each HHA in X_Test were computed using the Expected Benefit formula and ranked according to the scores in descending order. These ranked lists were then used to draw Profit Curves.
+
+The expected benefit scores were compared against a threshold derived from the value of incentivizing (and not incentivizing) to make a decision regarding whether the ML models recommend CMS to incentivize an HHA. If the score is greater than the threshold, the model set proposes a decision to incentivize the HHA; otherwise, it does not.
+
+Next, the predictions were compared with the actual outcomes (Y_Test) to build a confusion matrix, referred to as the Expected Probability Matrix (EPM). The threshold is given by:
+
+
+
+To construct the confusion matrix, a deliberate decision was made to consider HHAs that have actually incurred losses as those targeted with an incentive. Since real-world data on which HHAs are incentivized by CMS is not available, this assumption was deemed reasonably safe. Each HHA in the test sample was evaluated by each of the 27 model sets, and the outcome was added to the confusion matrix of the respective model set. In the end, 27 confusion matrices were generated, one for each of the 27 model sets under consideration.
