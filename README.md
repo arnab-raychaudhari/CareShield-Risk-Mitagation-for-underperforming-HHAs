@@ -78,3 +78,12 @@ To construct the confusion matrix, a deliberate decision was made to consider HH
 
 ![Confusion Matrix EPM Flow](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/f833299106a32b63f4f4c9f5c7cf36be98f55a00/Confusion-Matrix-EPM-Flow.png)
 
+After comparing the predictions from the model sets with the actual outcomes, a more robust cost-benefit framework was designed to guide CMS management toward more informed decisions, incorporating a proxy for prevailing business practices.
+
+The framework explores the potential dollar value that CMS could derive by following the model sets implemented. Due to the lack of real-world business information, certain assumptions were made to develop this proxy.
+
+While analyzing the business value, it was observed that CMS has the authority to review Medicare and Medicaid reimbursement claims before making approval decisions. One reason for HHAs incurring financial losses is CMS declining some of their reimbursement claims. These declined bills can be considered savings for CMS. Therefore, in the cost-benefit framework, these reimbursement savings were generalized to be $10,000 per instance of an HHA predicted to be struggling financially and eventually rescued by CMS.
+
+The administrative cost for targeting a deficit-ridden HHA was approximated to be $1,000. In summary, the dollar benefit for targeting a true positive case is $99,000 ($100,000 - $1,000). If CMS incentivizes an HHA per model prediction and the entity is not incurring financial loss (i.e., a false positive case), then only the administrative cost would be lost, with no surplus savings of $100,000 from reimbursement denials. Conversely, if CMS follows the model prediction not to incentivize an HHA that is financially struggling (i.e., a false negative case), then an opportunity to save $100,000 is lost. Lastly, if an HHA is profitable and this is verified by the model set, then such an entity will not create an income opportunity for CMS.
+
+Thus, the cost-benefit framework used in this implementation is designed to optimize the financial impact of decisions based on model predictions.
