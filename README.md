@@ -63,3 +63,5 @@ Rather than training a limited number of models, three distinct sets of models w
 ![The relationship between Expected Benefit and Value of Incentive](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/d8cca4dbe2079c4c86f3db5975b5ff65774a361a/Expected-Benefit-and-Incentive-Values.png)
 
 To provide a range of options for CMS, three distinct classifiers will be trained on the sample data to predict each of Pr(X) and Vni(X). Similarly, for Vi(X), three regressors will be trained, ultimately producing a minimum of nine model sets.
+
+![Set of Machine Learning models](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/75753f21207da3ddf7e361cfb583b7d7faafd162/ML%20Model%20Set.png)
