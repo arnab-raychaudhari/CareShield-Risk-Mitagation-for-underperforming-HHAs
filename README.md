@@ -75,3 +75,6 @@ Next, the predictions were compared with the actual outcomes (Y_Test) to build a
 ![Threshold Formula](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/5a2b2a283d8ddb87888edb7914230953a8abd368/Threshold%20Fromula.png)
 
 To construct the confusion matrix, a deliberate decision was made to consider HHAs that have actually incurred losses as those targeted with an incentive. Since real-world data on which HHAs are incentivized by CMS is not available, this assumption was deemed reasonably safe. Each HHA in the test sample was evaluated by each of the 27 model sets, and the outcome was added to the confusion matrix of the respective model set. In the end, 27 confusion matrices were generated, one for each of the 27 model sets under consideration.
+
+![Confusion Matrix EPM Flow](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/f833299106a32b63f4f4c9f5c7cf36be98f55a00/Confusion-Matrix-EPM-Flow.png)
+
