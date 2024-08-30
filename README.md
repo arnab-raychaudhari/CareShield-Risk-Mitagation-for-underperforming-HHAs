@@ -87,3 +87,5 @@ While analyzing the business value, it was observed that CMS has the authority t
 The administrative cost for targeting a deficit-ridden HHA was approximated to be $1,000. In summary, the dollar benefit for targeting a true positive case is $99,000 ($100,000 - $1,000). If CMS incentivizes an HHA per model prediction and the entity is not incurring financial loss (i.e., a false positive case), then only the administrative cost would be lost, with no surplus savings of $100,000 from reimbursement denials. Conversely, if CMS follows the model prediction not to incentivize an HHA that is financially struggling (i.e., a false negative case), then an opportunity to save $100,000 is lost. Lastly, if an HHA is profitable and this is verified by the model set, then such an entity will not create an income opportunity for CMS.
 
 Thus, the cost-benefit framework used in this implementation is designed to optimize the financial impact of decisions based on model predictions.
+
+![Cost Benefit Framework](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/bc797724cd629452c3dbde1f84dec3b19339c063/Cost-Benefit-Framework.png)
