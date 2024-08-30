@@ -1,14 +1,14 @@
 # Early Detection and Mitigation of Financial Risks in Home Health Agencies: A CMS Intervention Approach
 
-## Executive Summary
+## EXECUTIVE SUMMARY
 On April 27, 2023, CMS (Centre for Medicare and Medicaid Services.) announced a new proposed rule (CMS-2439-P) that requires at least 80% of Medicaid payments for home care worker compensation to be spent directly on worker wages, limiting the amount of profit HHAs can retain. Agencies that fail to comply with the new proposed rule may incur civil money penalties and sanctions, which may impact their financial stability.
 
 Through a prelimiary analysis it was hypothesised that early intervention through grants and incentives for struggling HHAs could prevent financial instability, creating business value and reducing negative sentiments about CMS-2439-P.
 
-## Objective
+## OBJECTIVE
 Employ machine learning algorithms to develop a business decision strategy that helps CMS evaluate the financial impact of their early intervention strategies, thereby identifying profitability, enhancing patient care quality, and exploring the potential to increase patient visit volume.
 
-## Tech Stack
+## TECH STACK
 Programming Language: Python
 
 IDE: Jupyter Notebook
@@ -21,7 +21,7 @@ Machine Learning Model Development: Train_Test_Split, LogisticRegression, Linear
 
 Model Evaluation: Scikit-Learn - ModelSelection, ConfusionMatrix, Accuracy, Precision, Recall, F1-score, and ROC-AUC, and Cross-Validation.
 
-## Source and collection
+## SOURCE AND COLLECTION
 
 CMS website: https://data.cms.gov
 
@@ -42,7 +42,7 @@ Initially, the focus was on the HHA Cost Report dataset, which includes identify
 
 It was recognized, however, that other qualitative and quantitative features could influence the variability in net income or net loss. For this reason, the cost report was merged with two additional datasets. One dataset was the Quality of Patient Care dataset, which includes features such as the Quality of Patient Care star rating and the frequency of patients’ breathing improvements. The other dataset was the Provider of Service dataset, which includes features such as Employee Count and Operating Room Count.
 
-## Feature Selection and Data Transformation
+## FEATURE SELECTION AND DATA TRANSFORMATION
 
 The final set of variables was selected based on extensive financial and healthcare-related research. The financial features chosen are important for calculating specific financial ratios, which will be discussed below. Additionally, the quality of patient care provides insight into the satisfaction of those who utilize the HHA’s services. This, in turn, influences the likelihood of a person returning to that specific HHA, ultimately impacting the HHA’s financial performance.
 
@@ -54,7 +54,7 @@ The selected variables ensure the use of metrics aimed at optimizing patient out
 
 The decision to create ratios was influenced by common financial industry practices and the need for standardization. For instance, differences in asset size can make peer analysis challenging, such as comparing an HHA with $100 in current assets to another with $1,000,000 in current assets. Ratio analysis, such as the ratio of current assets to current liabilities, facilitates peer comparison between HHAs with varying asset sizes. Additionally, ratio analysis provides a more comprehensive and insightful understanding of financial performance and enhances forecasting and prediction capabilities. Finally, a current ratio greater than 20 was deemed inconsistent with industry averages, leading to the exclusion of HHAs with a current ratio less than 0 and greater than 20 from the dataset.
 
-## Managerial Decisions
+## MANAGERIAL DECISIONS
 
 To maximize the outcome of incentivizing Home Health Agencies (HHAs) at risk of going out of business, CMS must design a business strategy. This strategy should integrate machine learning model predictions to make informed decisions and target entities that could generate the maximum profit. Integrating the business value of incentivizing an HHA with the probability of incurring a loss or profit in the near future is essential.
 
@@ -100,11 +100,11 @@ Merely computing the Expected Profit for all objects in X_Test will not enable C
 
 For demonstration purposes, an assumption was made that CMS will run a pilot instance of the intervention campaign, starting by targeting the top 10% and 90% of the loss-incurring HHAs.
 
-## Model Development
+## MODEL DEVELOPMENT
 
 The focus was on six different models: three regressors and three classifiers. The three regressors included LASSO, Ridge, and Elastic Net (EN). The three classifiers included Decision Trees (DT), Logistic Regression (LR), and Support Vector Machines (SVM). Specific decisions were required for these models. For instance, it was important to encode an HHA with a loss as 0 and an HHA with a profit as 1. Additionally, it was crucial to subset the data to ensure that the predictions were built off of the loss-related data, as discussed in the course. This approach ensures that the model output can effectively target the HHAs that require incentivization.
 
-## Regressors
+## REGRESSORS
 
 Regressors were chosen to predict the value of incentivizing an HHA (V_i) because this value is derived from a continuous variable, the quality of patient care star rating. Despite their pros and cons, the selected regressor models are deemed most appropriate for this modeling purpose.
 
@@ -114,7 +114,7 @@ Regressors were chosen to predict the value of incentivizing an HHA (V_i) becaus
 
 **ELASTIC NET**: Elastic Net is a regularization technique that combines both Lasso and Ridge processes in machine learning models, yielding a balance between feature selection and coefficient penalization. Elastic Net was chosen for predicting the value of incentivizing an HHA because it uses a combination of the processes from LASSO and Ridge. Elastic Net ensures that the outputs yield a combined balance of the benefits offered by both Ridge and LASSO.
 
-## Classifiers
+## CLASSIFIERS
 
 Classifiers were chosen to predict the value of not incentivizing an HHA (V_ni) and to predict the probability that an HHA incurs a loss (P_r). The value of not incentivizing is derived from a categorical variable, specifically whether or not the total visits at an HHA fell below the population median. Additionally, the probability of incurring a loss is derived from a categorical variable, a flag indicating whether or not the HHA incurred a loss. The selected classifier models, despite their pros and cons, are considered most appropriate for these specific modeling purposes.
 
