@@ -89,3 +89,8 @@ The administrative cost for targeting a deficit-ridden HHA was approximated to b
 Thus, the cost-benefit framework used in this implementation is designed to optimize the financial impact of decisions based on model predictions.
 
 ![Cost Benefit Framework](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/bc797724cd629452c3dbde1f84dec3b19339c063/Cost-Benefit-Framework.png)
+
+Having the capability to rely on the models for informed predictions and the availability of a cost-benefit framework does not, by itself, equip the management team at CMS to make their best decision. The next challenge is to apply the prediction in conjunction with the cost-benefit framework to compute the profits for each HHA in X_Test. This computation of profits will ultimately enable CMS to decide how to conduct the targeting and how much revenue they can generate from the intervention campaign.
+
+By considering the class priors, drawing performance measures from the Expected Probability Matrix (EPM), and using the numbers in the cost-benefit matrix, the following Expected Profit formula was devised.
+
