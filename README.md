@@ -9,15 +9,15 @@ Through a prelimiary analysis it was hypothesised that early intervention throug
 Employ machine learning algorithms to develop a business decision strategy that helps CMS evaluate the financial impact of their early intervention strategies, thereby identifying profitability, enhancing patient care quality, and exploring the potential to increase patient visit volume.
 
 ## TECH STACK
-Programming Language: Python
+Programming Language: ![python](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/python.svg)Python
 
-IDE: Jupyter Notebook
+IDE: ![jupyter](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/jupyter.svg)Jupyter Notebook
 
-Data Ingestion, Transformation and Cleaning: Scikit-Learn (SimpleImputer, OneHotEncoder, LabelEncoder)
+Data Ingestion, Transformation and Cleaning: ![scikit](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/scikitlearn.svg) Scikit-Learn (SimpleImputer, OneHotEncoder, LabelEncoder)
 
-Data Visualization: Matplotlib, Seaborn, Tableau
+Data Visualization: ![matplotlib](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/matplotlib.svg) Matplotlib, ![seaborn](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/seaborn.svg) Seaborn, ![tableau](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/tableau.svg) Tableau
 
-Machine Learning Model Development: Train_Test_Split, LogisticRegression, LinearRegression, Decision Trees, Lasso, Ridge, LassoCV, RidgeCV, ElasticNet, ElasticNetCV, SVM
+![ml](https://github.com/arnab-raychaudhari/ml-driven-risk-mitagation-for-underperforming-HHAs/blob/c713173d17eb2bff9fead1e23a21e53096e64075/machine-learning.svg) Machine Learning Model Development: Train_Test_Split, LogisticRegression, LinearRegression, Decision Trees, Lasso, Ridge, LassoCV, RidgeCV, ElasticNet, ElasticNetCV, SVM
 
 Model Evaluation: Scikit-Learn - ModelSelection, ConfusionMatrix, Accuracy, Precision, Recall, F1-score, and ROC-AUC, and Cross-Validation.
 
