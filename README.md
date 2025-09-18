@@ -1,4 +1,4 @@
-# Early Detection and Mitigation of Financial Risks in Home Health Agencies: A CMS Intervention Approach
+# CareShield: Early Detection and Mitigation of Financial Risks in Home Health Agencies - A CMS Intervention Approach
 
 ## EXECUTIVE SUMMARY
 On April 27, 2023, CMS (Centre for Medicare and Medicaid Services.) announced a new proposed rule (CMS-2439-P) that requires at least 80% of Medicaid payments for home care worker compensation to be spent directly on worker wages, limiting the amount of profit HHAs can retain. Agencies that fail to comply with the new proposed rule may incur civil money penalties and sanctions, which may impact their financial stability.
